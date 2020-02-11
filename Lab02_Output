@@ -1,0 +1,269 @@
+Jamie Hernandez
+comp151
+
+LAB02 - PROJECT 1 OUTPUT:
+
+ ArraySetWithResizableArrayBag
+--> Creating set1 with the secondary constructor - capacity of 8
+--> Adding elements from inputData: [A, B, C, D, A, C, B, B] to set1
+--> Calling displaySet method to display elements in set1
+--> calling displaySet method to display results
+The set contains 4 string(s): A B C D 
+--> Calling displaySet method to display elements in set1 one more time
+--> calling displaySet method to display results
+The set contains 4 string(s): A B C D 
+
+--> Clearing set1
+--> calling displaySet method to display results
+the set is empty
+
+
+--> set1 isEmpty returns 
+true
+--> The number of elements in set1 is 
+0
+
+--> Creating set2 with default constructor
+--> set2 initially empty
+--> calling displaySet method to display results
+the set is empty
+
+
+
+--> Adding elements to set2
+--> set2 after adding elements
+--> calling displaySet method to display results
+The set contains 3 string(s): A B C 
+
+--> Adding elements to set2
+
+--> set2 after adding more elements
+--> calling displaySet method to display results
+The set contains 10 string(s): A B C V T U W X Y Z 
+
+--> set2 contains "A":
+true
+--> set2 contains "E":
+false
+
+--> Removing "B" from set2
+--> After removing "B" from set2:
+--> calling displaySet method to display results
+The set contains 9 string(s): A Z C V T U W X Y 
+--> Removing random element from set2
+--> After removing "Y" from set2:
+--> calling displaySet method to display results
+The set contains 8 string(s): A Z C V T U W X 
+
+--> Trying to remove "Q" from set2
+--> After trying to remove non-existent element "Q" from set2:
+--> calling displaySet method to display results
+The set contains 8 string(s): A Z C V T U W X 
+
+--> Adding 4 elements to set2
+--> After adding 4 elements to set2:
+--> calling displaySet method to display results
+The set contains 12 string(s): A Z C V T U W X K L M N 
+--> Adding 1 element to set2
+--> After adding 1 more element to set2:
+--> calling displaySet method to display results
+The set contains 13 string(s): A Z C V T U W X K L M N O 
+
+--> Creating set3 with the secondary constructor that takes an array as input
+--> calling displaySet method to display results
+The set contains 4 string(s): A B C D 
+--> Adding more elements to set3
+--> set3 after adding:
+--> calling displaySet method to display results
+The set contains 8 string(s): A B C D E F G H 
+
+Trying to add null entry
+--> set3 after adding:
+--> calling displaySet method to display results
+The set contains 8 string(s): A B C D E F G H 
+
+Process finished with exit code 0
+
+LAB02 - PROJECT 2 OUTPUT:
+
+RUNNING TEST CASES FOR METHODS INCLUDED IN THE SetInterface plus displaySet
+--> Creating set1 with the secondary constructor - capacity of 8
+--> Adding elements from inputData: [A, B, C, D, A, C, B, B] to set1
+--> Calling displaySet method to display elements in set1
+The set capacity is 8; it contains 4 string(s): A B C D 
+--> Calling displaySet method to display elements in set1 one more time
+The set capacity is 8; it contains 4 string(s): A B C D 
+
+--> Clearing set1
+--> set1 isEmpty returns 
+true
+--> The number of elements in set1 is 
+0
+
+--> Creating set2 with default constructor
+--> set2 initially empty, capacity should be 3:
+
+--> Adding elements to set2
+--> set2 after adding elements, capacity should be 3:
+The set capacity is 6; it contains 3 string(s): A B C 
+
+--> Adding elements to set2
+
+--> set2 after adding more elements which should have triggered resizing, and the capacity should be 12:
+The set capacity is 12; it contains 10 string(s): A B C V T U W X Y Z 
+
+--> set2 contains "A":
+true
+--> set2 contains "E":
+false
+
+--> Removing "B" from set2
+--> After removing "B" from set2:
+The set capacity is 12; it contains 9 string(s): A Z C V T U W X Y 
+--> Removing random element from set2
+--> After removing "Y" from set2:
+The set capacity is 12; it contains 8 string(s): A Z C V T U W X 
+
+--> Trying to remove "Q" from set2
+--> After trying to remove non-existent element "Q" from set2:
+The set capacity is 12; it contains 8 string(s): A Z C V T U W X 
+
+--> Adding 4 elements to set2
+--> After adding 4 elements to set2:
+The set capacity is 12; it contains 12 string(s): A Z C V T U W X K L M N 
+--> Adding 1 element to set2
+--> After adding 1 more element to set2:
+The set capacity is 24; it contains 13 string(s): A Z C V T U W X K L M N O 
+
+--> Creating set3 with the secondary constructor that takes an array as input
+The set capacity is 8; it contains 4 string(s): A B C D 
+--> Adding more elements to set3
+--> set3 after adding:
+The set capacity is 8; it contains 8 string(s): A B C D E F G H 
+
+Trying to add null entry
+--> set3 after adding:
+The set capacity is 16; it contains 8 string(s): A B C D E F G H 
+
+RUNNING TEST CASES FOR METHODS NOT INCLUDED IN THE SetInterface plus displaySet
+Created set4:
+The set capacity is 3; it contains 3 string(s): C A X 
+Created set5:
+After removing the last element X from set4, it contains:
+The set capacity is 3; it contains 2 string(s): C A 
+
+***Testing equals method***
+Are set4 and set5 equal? --> YES
+Are set5 and set4 equal? --> YES
+set5:
+The set capacity is 3; it contains 3 string(s): A C X 
+Are set4 and set5 equal? --> YES
+Removed X from set5:
+The set capacity is 3; it contains 2 string(s): A C 
+Are set4 and set5 equal now? --> NO
+Created setCopyOfSet4:
+The set capacity is 2; it contains 2 string(s): C A 
+Are set4 and setCopyOfSet4 equal? --> YES
+
+***Testing union, intersection, difference, removeMax, getAllLessThan and isSubset methods***
+set4:
+The set capacity is 6; it contains 3 string(s): C A X 
+set5:
+The set capacity is 6; it contains 4 string(s): A B C D 
+
+***Testing union method***
+The union of set4 and set5 is:
+The set capacity is 12; it contains 5 string(s): C A X B D 
+
+***Testing removeMax method***
+Removed the largest element "D" from the union set; the current content is:
+The set capacity is 12; it contains 4 string(s): C A X B 
+The set is empty and removeMax returned null - CORRECT
+
+***Testing intersection method***
+The intersection of set4 and set5 is:
+The set capacity is 3; it contains 2 string(s): C A 
+
+***Testing difference method***
+The difference of set4 and set5 is:
+The difference of set5 and set4 is:
+
+***Testing getAllLessThan method***
+The following entries in set4 are smaller than "Z":
+The set capacity is 3; it contains 3 string(s): C A X 
+The following entries in set5 are smaller than "C":
+The set capacity is 3; it contains 2 string(s): A B 
+
+***Testing isSubset method***
+Is set4 a subset of set4 ? --> YES
+Is set4 a subset of set5 ? --> NO
+Is an empty set a subset of set5 ? --> NO
+Is set5 a subset of an empty set ? --> YES
+Created set6:
+The set capacity is 3; it contains 3 string(s): A B C 
+Created set7:
+The set capacity is 3; it contains 3 string(s): B C A 
+Is set6 a subset of set7 ? --> YES
+Is set6 a subset of set7 after adding "Z" to it ? --> NO
+Is set7 a subset of set6 ? --> YES
+Adding  "Z" to set6 twice
+set6:
+The set capacity is 6; it contains 4 string(s): A B C Z 
+set7:
+The set capacity is 6; it contains 4 string(s): B C A Z 
+Is set6 a subset of set7 ? --> YES
+
+***Testing replace method***
+set4:
+The set capacity is 6; it contains 5 string(s): X A B D C 
+Trying to replace the last element with "C"
+CORRECT - returned null since no replacement was made
+Now set4 contains:
+The set capacity is 6; it contains 5 string(s): X A B D C 
+Trying to replace the last element with "X"
+CORRECT - returned null since no replacement was made
+Now set4 contains:
+The set capacity is 6; it contains 5 string(s): X A B D C 
+Trying to replace the last element with "Z"
+CORRECT - replacement was made
+Now set4 contains:
+The set capacity is 6; it contains 5 string(s): X A B D Z 
+
+Calling replace on emptySet
+The set is empty and replace returned null - CORRECT
+Now emptySet contains:
+
+***Testing removeAllLarger method***
+set4:
+The set capacity is 6; it contains 5 string(s): X A B D Z 
+Removing all that are larger than "Z"
+After removing all that are larger than "Z" set4 contains:
+The set capacity is 6; it contains 5 string(s): X A B D Z 
+Removing all that are larger than "D"
+After removing all that are larger than "D" set4 contains:
+The set capacity is 6; it contains 3 string(s): D A B 
+Removing all that are larger than "B"
+After removing all that are larger than "B" set4 contains:
+The set capacity is 6; it contains 2 string(s): B A 
+
+***Testing moveFirstToEnd method***
+set4:
+Trying empty set
+set4 contains now:
+adding "A" to set4
+The set capacity is 6; it contains 1 string(s): A 
+Trying 1-element set
+set4 contains now:
+The set capacity is 6; it contains 1 string(s): A 
+adding "B" to set4
+The set capacity is 6; it contains 2 string(s): A B 
+Trying 2-element set
+set4 contains now:
+The set capacity is 6; it contains 2 string(s): B A 
+adding three more elements to set4
+The set capacity is 6; it contains 5 string(s): B A X Y Z 
+Trying multi-element set
+set4 contains now:
+The set capacity is 6; it contains 5 string(s): Z A X Y B 
+
+Process finished with exit code 0
